@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css" rel="stylesheet">  
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        />
+    
+</head>
+<body>
+    
+    <section class="bg-white py-5">
+        <div class="container">
+          <div id="userList" class="row">
+              <!--lightbulb section-->
+            <div class="col-lg-4">
+                <div class="col-12 pic itembox shadow servic">
+                    <i class = "fa fa-ellipsis-v" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" style="margin: 7px 172px;"></i>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">it1</a>
+                        <a href="" class="dropdown-item">it2</a>
+                        <a href="" class="dropdown-item">it3</a>
+                    </div>
+                    <i class="mdi mdi-lightbulb-on-30 bulb" style="position:absolute; font-size:130px; margin:-30px 25px;"></i>
+
+                    <p class="light" style="text-align: center; margin: 150px 65px; font-size: 24px;" >light</p>
+                    <input type="checkbox" id="switch"
+                    class="checkbox" />
+                    <label for="switch" classs="turnSwitch" style="position:absolute; margin: -138px 35px;" class="toggle"  >
+                    </label>
+
+                </div>
+            </div>
+            <!--end of lightbulb section-->
+            <!--date section-->
+            <div class="col-lg-4">
+                <div class="col-12 pic itembox shadow servic">
+                    <button style="margin:70px 40px; border:2px solid #ccc; border-radius: 5px ;" onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+                    <p id="demo"></p>
+                </div>
+              </div>
+            <!--end of date section-->
+            <!--temp section-->
+            <div class="col-lg-4">
+                <div class="col-12 pic itembox shadow servic">
+                    <p id="demot" style="font-size: 50px; padding: 45px 60px;">30</p>
+                    <p class="1" style="text-align:center;">__________________</p>
+                </div>
+            </div>
+            <!--end of temp section-->
+        </div>
+    </section>
+      
+    <script src="ejs.js"></script>
+
+
+           
+</body>
+</html>
